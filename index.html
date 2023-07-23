@@ -359,7 +359,19 @@
                     </li>
                 </ul>
             </div>
-            <div></div>
+            <div class="footer-input-form">
+                <p class="footer-social-description">Subscribe</p>
+                <form class="footer-form">
+                    <label class="footer-label">
+                        <input class="footer-input" type="email" name="user-email" placeholder="E-mail">
+                    </label>
+                    <button class="hero-btn footer-input-btn" type="submit">Subscribe
+                        <svg class="footer-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -373,49 +385,49 @@
             <p class="modal-title">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="modal-form-group">
-                    <div class="________">
+                    <div class="form-group-items">
                         <label class="form-label">
                             <span>Name</span>
                             <span class="_______">
-                                <input class="form-input" type="text" name="username" />
-                                <svg class="________" width="18" height="24">
+                                <input class="form-input" type="text" name="user-name" required />
+                                <svg class="form-icon" width="18" height="24">
                                     <use href="./images/icons.svg#icon-input-person" ></use>
                                 </svg>
                             </span>
                         </label>
                     </div>
-                    <div class="________">
+                    <div class="form-group-items">
                         <label class="form-label">
                             <span>Phone</span>
                             <span class="_______">
-                                <input class="form-input" type="tel" name="contact_tel" />
-                                <svg class="________" width="18" height="24">
+                                <input class="form-input" type="tel" name="user-tel" required />
+                                <svg class="form-icon" width="18" height="24">
                                     <use href="./images/icons.svg#icon-input-phone"></use>
                                 </svg>
                             </span>
                         </label>
                     </div>
-                    <div class="________">
+                    <div class="form-group-items">
                         <label class="form-label">
                             <span>Email</span>
                             <span class="_______">
-                                <input class="form-input" type="email" name="contact_email" />
-                                <svg class="________" width="18" height="24">
+                                <input class="form-input" type="email" name="user-email" required />
+                                <svg class="form-icon" width="18" height="24">
                                     <use href="./images/icons.svg#icon-input-email"></use>
                                 </svg>
                             </span>
                         </label>
                     </div>
                     <label class="form-label">
-                        Comment
-                        <textarea class="form-textarea" name="Comment" rows="5" placeholder="Text input"></textarea>
+                        <span>Comment</span>
+                        <textarea class="form-textarea" name="comment" rows="5" placeholder="Text input" required></textarea>
                     </label>
                 </div>
                 <label>
-                    <input type="checkbox" name="" value="" checked />
-                    I accept the terms and conditions of the Privacy Policy
+                    <input class="_______" type="checkbox" name="" value="" checked />
+                    I accept the terms and conditions of the <a class="privacy-policy" href="" >Privacy Policy</a>
                 </label>
-                <button type="submit">Send</button>
+                <button class="hero-btn modal-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
