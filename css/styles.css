@@ -11,7 +11,7 @@
     --accent-bg-color: #404BBF;
     --btn-team-bg-color: #F4F4FD;
     --border-color: #E7E9FC;
-    --border-input-color: #2E2F42;
+    --border-input-color: rgba(46, 47, 66, 0.40);
     --client-icon: #8E8F99;
     --modal-bg: #FCFCFC;
     --accent-footericon-color: #31D0AA;
@@ -756,6 +756,11 @@ img {
     transition: border-color var(--transition);
 }
 
+.form-input:hover,
+.form-input:focus-within {
+    border-color: var(--form-icon-accent-color);
+}
+
 .form-icon {
     fill: var(--form-icon-color);
     transition: fill var(--transition);
@@ -766,22 +771,25 @@ img {
     transition: fill var(--transition);
 }
 
-.form-input:hover,
-.form-inputt:focus {
-    border-color: var(--form-icon-accent-color);
-}
-
 .form-input:hover + .form-icon,
-.form-inputt:focus + .form-icon {
+.form-input:focus-within + .form-icon {
     fill: var(--form-icon-accent-color);
 }
 
 .form-textarea {
+    font-family: inherit;
     width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--border-input-color);
     resize: none;
     margin-top: 4px;
     padding-top: 8px;
     padding-left: 16px;
+}
+
+.form-textarea:hover,
+.form-textarea:focus-within {
+    border-color: var(--form-icon-accent-color);
 }
 
 .form-textarea::placeholder {
