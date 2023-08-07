@@ -837,7 +837,7 @@ img {
 }
 
 .modal-check-text span {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 16px;
