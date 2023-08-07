@@ -498,10 +498,13 @@ img {
 .footer-input {
     width: 264px;
     height: 40px;
-    color: var(--accent-footericon-color);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
     border-radius: 4px;
     border: 1px solid var(--main-bg-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
     outline: transparent;
     padding: 8px 16px;
@@ -513,9 +516,9 @@ img {
     display: flex;
     align-items: center;
     font-size: 12px;
+    color: var(--main-color);
     line-height: 2;
     letter-spacing: 0.04em;
-    color: var(--main-color);
 }
 
 .footer-input:hover,
@@ -531,12 +534,12 @@ img {
     font-family: inherit;
     font-size: 16px;
     padding: 8px 24px;
-    gap: 16px;
     min-width: 165px;
     cursor: pointer;
 }
 
 .footer-btn-icon{
+    margin-left: 16px;
     fill: var(--main-color);
 }
 
@@ -740,14 +743,15 @@ img {
 .form-label {
     width: 100%;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: var(--label-color);
-    display: inline-block;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .form-input-wrap {
     position: relative;
-    margin-top: 4px;
 }
 
 .form-input {
@@ -756,6 +760,7 @@ img {
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--border-input-color);
+    background-color: transparent;
     padding-left: 38px;
     padding-right: 16px;
     outline: transparent;
@@ -768,6 +773,7 @@ img {
 }
 
 .form-icon {
+    position: absolute;
     fill: var(--form-icon-color);
     position: absolute;
     left: 16px;
@@ -788,11 +794,16 @@ img {
 .form-textarea {
     font-family: inherit;
     width: 100%;
-    min-height: 120px;
+    height: 120px;
+    color: rgba(46, 47, 66, 0.4);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     border-radius: 4px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     margin-top: 4px;
     padding: 8px 16px;
+    background-color: transparent;
     outline: transparent;
     resize: none;
     transition: border-color var(--transition);
@@ -810,7 +821,9 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
-/* .form-modal-checkbox {} */
+.form-modal-checkbox {
+    margin-bottom: 24px;
+}
 
 /* .modal-check {} */
 
@@ -826,10 +839,10 @@ img {
 .modal-check-text span {
     height: 16px;
     width: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -841,6 +854,8 @@ img {
     border: none;
     fill: var(--logo-footer-color);
 }
+
+/* .modal-check-icon {} */
 
 /* .check-icon {} */
 
