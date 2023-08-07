@@ -836,8 +836,16 @@ img {
     align-items: center;
 }
 
-.modal-check-text span {
-    display: flex;
+/* .modal-check-text span {} */
+
+.modal-check:checked + .modal-check-text span {
+    background-color: var(--accent-bg-color);
+    border: none;
+    fill: var(--logo-footer-color);
+}
+
+.modal-check-icon {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 16px;
@@ -848,14 +856,6 @@ img {
     fill: transparent;
     transition: background-color var(--transition), border var(--transition), fill var(--transition);
 }
-
-.modal-check:checked + .modal-check-text span {
-    background-color: var(--accent-bg-color);
-    border: none;
-    fill: var(--logo-footer-color);
-}
-
-/* .modal-check-icon {} */
 
 /* .check-icon {} */
 
