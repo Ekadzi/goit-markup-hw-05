@@ -836,7 +836,18 @@ img {
     align-items: center;
 }
 
-.modal-check-text span {}
+.modal-check-text span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color var(--transition), border var(--transition), fill var(--transition);
+}
 
 .modal-check:checked + .modal-check-text span {
     background-color: var(--accent-bg-color);
@@ -844,18 +855,7 @@ img {
     fill: var(--logo-footer-color);
 }
 
-.modal-check-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 16px;
-    width: 16px;
-    margin-right: 8px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    fill: transparent;
-    transition: background-color var(--transition), border var(--transition), fill var(--transition);
-}
+/* .modal-check-icon {} */
 
 /* .check-icon {} */
 
