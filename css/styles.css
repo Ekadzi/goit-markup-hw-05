@@ -832,7 +832,6 @@ img {
     color: var(--label-color);
     line-height: 1.17;
     letter-spacing: 0.48px;
-    display: flex;
     align-items: center;
 }
 
@@ -842,7 +841,6 @@ img {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    margin-right: 8px;
     align-items: center;
     justify-content: center;
     fill: transparent;
