@@ -855,7 +855,9 @@ img {
     fill: var(--logo-footer-color);
 }
 
-/* .modal-check-icon {} */
+.modal-check-icon {
+    display: inline-flex;
+}
 
 /* .check-icon {} */
 
