@@ -442,12 +442,10 @@ img {
 .footer-text {
     line-height: 1.5;
     color: var(--logo-footer-color);
-    width: 264px;
+    max-width: 264px;
 }
 
-.footer-list {
-    margin-left: 120px;
-}
+/* .footer-list {} */
 
 .footer-social-description {
     font-weight: 500;
@@ -485,7 +483,7 @@ img {
 }
 
 .footer-input-form {
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .footer-form {
@@ -508,7 +506,6 @@ img {
     background-color: transparent;
     outline: transparent;
     padding: 8px 16px;
-    margin-right: 24px;
     transition: border-color var(--transition);
 }
 
